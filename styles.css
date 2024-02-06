@@ -69,11 +69,12 @@
     display:grid;
     grid-template-columns: 1fr 1fr;
     width:80%;
-    margin:25px auto;
+    margin:30px auto;
     grid-gap:30px;
   }
   .web-Instructors > .heading,.DSA-Instructors > .heading,.cc-instructor > h3{
     grid-column: span 2;
+    margin-bottom: 0;
     font-weight: 700;
   }
   .sk{
@@ -89,7 +90,7 @@
     margin: auto;
   }
   .cc-instructor .card{
-    margin: 25px auto;
+    margin: 30px auto;
   }
   .card-title{
     font-weight: bold;
