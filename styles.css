@@ -66,6 +66,7 @@
   }
   .instructor-container>h2{
     font-family: "Arimo", sans-serif;
+    font-size: 2rem;
     font-weight: bold;
     margin-bottom: 50px;
   }
@@ -82,6 +83,7 @@
     grid-gap:30px;
   }
   .web-Instructors > .heading,.DSA-Instructors > .heading,.cc-instructor > h3{
+    font-size: 1.5rem;
     grid-column: span 2;
     margin-bottom: 0;
     font-weight: 700;
