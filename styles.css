@@ -1,3 +1,6 @@
+.Header,h5{
+    font-family: "Arimo", sans-serif;
+}
 .container-2 img {
     height: 75vh;
     width: 100vw;
@@ -6,11 +9,12 @@
 
   .course-offers {
     margin: 100px auto;
+    margin-bottom:75px;
   }
 
   .container-3 {
     margin: auto;
-    margin-bottom: 0px;
+    margin-bottom: 25px;
     width: 75%;
     display: grid;
     grid-template-columns: 300px auto;
@@ -28,8 +32,12 @@
 
   body>.course-offers>section.container-3>div>p:nth-child(4),
   body>.course-offers>section.container-4>div>p:nth-child(4) {
+    font-family: "Montserrat", sans-serif;
     font-size: 1.75rem;
     font-weight: bold;
+  }
+  p{
+    font-family: "Arimo", sans-serif;
   }
 
   .container-3 button{
@@ -43,51 +51,55 @@
   .container-5 {
     margin-top: 25px !important;
   }
-
-  .instructors {
-    margin: auto;
-    width: 95%;
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-  }
-
-  .instructor-container {
+  .instructor-container{
+    margin:75px auto;
     text-align: center;
   }
-
-  .instructors img {
-    height: 250px;
-    width: 100%;
-    object-fit: cover;
-  }
-
-  .card-text {
-    text-align: center;
-    font-size: 14px;
-  }
-
-  .card-title {
-    font-size: 16px;
-  }
-
-  .instructor-container {
-    margin: 100px auto;
-  }
-
-  .instructor-container>h2 {
+  .instructor-container>h2{
+    font-family: "Arimo", sans-serif;
+    font-weight: bold;
     margin-bottom: 50px;
   }
-
-  hr {
-    width: 10%;
-    margin: auto;
-    border: 5px dotted black;
-    border-bottom: none;
+  .instructor-container img{
+    width:100%;
+    height:300px;
+    object-fit: cover;
   }
-
-  .domain {
-    font-size: 14px;
+  .web-Instructors,.DSA-Instructors{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    width:80%;
+    margin:25px auto;
+    grid-gap:30px;
+  }
+  .web-Instructors > .heading,.DSA-Instructors > .heading,.cc-instructor > h3{
+    grid-column: span 2;
+    margin-bottom: 25px;
+    font-weight: 700;
+  }
+  .sk{
+    margin-left: auto;
+  }
+  .ts{
+    margin-left: auto;
+  }
+  .cc-instructor{
+    display:grid;
+    grid-template-columns: 1fr;
+    width:75%;
+    margin: auto;
+  }
+  .cc-instructor .card{
+    margin: 25px auto;
+  }
+  .card-title{
+    font-weight: bold;
+  }
+  hr{
+    width:10%;
+    margin:auto !important;
+    border:5px dotted gray !important;
+    border-bottom: 0 !important;
   }
   .container-fluid{
     padding-left: 10px;
@@ -110,70 +122,36 @@
       text-align: left;
     }
   }
-  @media(max-width:724px) {
-    .card-title{
-      font-size: 14px;
+  @media(max-width:764px) {
+    .card{
+        width:15rem !important;
     }
-    .domain{
-      font-size: 12px;
+  }
+  @media(max-width:633px){
+    .card{
+        width:12rem !important;
     }
     .card-text{
-      font-size: 12px;
+        font-size: 14px;
     }
   }
-  @media(max-width:650px){
-    .instructors{
-      display: grid;
-      grid-template-columns: 1fr 1fr;
+  @media(max-width:519px){
+    .web-Instructors,.DSA-Instructors,.cc-instructor{
+        width:100%;
     }
+    .instructor-container img{
+        height:150px;
+    }
+  }
+  @media(max-width:418px){
     .card{
-      margin: auto;
+        width:10rem !important;
+    }
+    .card-title{
+        font-size:16px;
+    }
+    .card-text{
+        font-size:12px;
     }
   }
-  @media(max-width:540px){
-    .instructors img{
-      height:200px;
-    }
-    .card{
-      width:12rem !important;
-    }
-  }
-  @media(max-width:428px){
-    .instructors img{
-      height:150px;
-    }
-    .card{
-      height:100%;
-      width:90% !important;
-    }
-    .card-body{
-      padding:0;
-      padding-top: 5px;
-      padding-bottom: 5px;
-    }
-  }
-  @media(max-width:373px){
-    .container-3{
-      width:90%;
-      font-size: 0.75rem;
-    }
-  }
-  @media(max-width:330px){
-    .instructors img{
-      height:200px;
-    }
-    .instructors{
-      display: grid;
-      grid-template-columns: 1fr;
-      width:75%;
-      margin:auto;
-    }
-    .container-3 button{
-      font-size: 14px;
-    }
-    body>.course-offers>section.container-3>div>p:nth-child(4),
-  body>.course-offers>section.container-4>div>p:nth-child(4) {
-    font-size: 1.25rem;
-    font-weight: bold;
-  }
-  }
+  
